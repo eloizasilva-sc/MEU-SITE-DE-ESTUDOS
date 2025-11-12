@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Lúdico Completo - Comunicação Social e Disposições Gerais</title>
+    <!-- Carrega o Tailwind CSS para estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .card {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 1.5rem; /* Mais arredondado para ser lúdico */
+            border: 1px solid transparent;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(79, 70, 229, 0.3); /* Sombra mais vibrante no hover */
+        }
+        .icon {
+            font-size: 3rem; /* Ícones maiores */
+            line-height: 1;
+            display: inline-block;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background-color: rgba(79, 70, 229, 0.1); /* Fundo suave para o ícone */
+        }
+        .highlight-red {
+            background-color: #fee2e2; /* Cor de realce para restrições ou alertas */
+            font-weight: 700;
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+        .highlight-green {
+            background-color: #d1fae5; /* Cor de realce para garantias e permissões */
+            font-weight: 700;
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+        .highlight-blue {
+            background-color: #e0f2fe; /* Cor de realce para regras e números */
+            font-weight: 700;
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+        
+        /* Estilos OTIMIZADOS para impressão em A4 (simulação de PDF/Ebook) */
+        @media print {
+            body { 
+                background-color: #fff;
+                max-width: 210mm; /* Limita a largura para simular A4 */
+                margin: 0 auto;
+                padding: 1cm; /* Margens padrão de impressão */
+            }
+            #pdf-button { display: none !important; }
+            .card {
+                box-shadow: none !important;
+                border: 1px solid #ddd; /* Borda clara para separação na impressão */
+                page-break-inside: avoid; /* CRUCIAL: Evita quebras de página dentro de um bloco de conteúdo */
+                margin-bottom: 20px;
+                border-radius: 0; /* Remove bordas arredondadas para formalidade de impressão */
+                border-left-width: 4px; /* Mantém a linha colorida na lateral */
+            }
+            .card:hover { /* Desabilita efeitos de hover na impressão */
+                transform: none;
+                box-shadow: none;
+            }
+            .highlight-red, .highlight-green, .highlight-blue {
+                background-color: #f0f0f0; /* Muta as cores para cinza suave */
+                color: #333; 
+                /* Permite que o fundo cinza seja impresso, se o navegador permitir */
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact;
+            }
+            header, footer, h2 {
+                page-break-after: avoid; /* Evita quebras de página após títulos */
+            }
+            h1, h2 {
+                font-size: 1.5em; /* Ajusta tamanho das fontes */
+            }
+            p, ul, li {
+                font-size: 0.9em;
+            }
+            main {
+                display: block; /* Força o empilhamento em coluna única para melhor fluxo A4 */
+            }
+        }
+    </style>
+    <script>
+        // Função para simular o download de PDF/Ebook (usa a função de impressão do navegador)
+        function downloadAsPdf() {
+            window.print();
+        }
+    </script>
+</head>
+<body class="p-4 md:p-10">
+
+    <!-- Botão de Download/Impressão -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="pdf-button" onclick="downloadAsPdf()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-xl transition duration-150 flex items-center transform hover:scale-105">
+            <span class="mr-2">💾</span> Baixar PDF/E-book
+        </button>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="text-center mb-12 bg-indigo-500 p-8 rounded-2xl text-white shadow-2xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-3">
+            🧠 Instituições Democráticas        </h1>
+        <p class="text-xl md:text-2xl font-light opacity-90">
+             (Cap. V e Título IX) - resumo da aula do dia 11 de novembro de 2025
+        </p>
+    </header>
+
+    <!-- TÍTULO: COMUNICAÇÃO SOCIAL -->
+    <h2 class="text-3xl font-bold text-gray-700 mb-6 border-b-4 border-blue-500 pb-3 max-w-7xl mx-auto">
+        CAPÍTULO V: DA COMUNICAÇÃO SOCIAL (Art. 220 ao 224)
+    </h2>
+
+    <!-- Conteúdo Principal - 4 Blocos Temáticos (Comunicação Social) -->
+    <main class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+
+        <!-- BLOCO 1: O ESCUDO DA LIBERDADE (Art. 220) - AJUSTADO CONFORME A IMAGEM -->
+        <div class="card p-8 bg-white border-l-8 border-blue-500">
+            <div class="icon mb-5">🛡️</div>
+            <h3 class="text-2xl font-extrabold text-blue-700 mb-3">1. Liberdade de Expressão e Informação (Art. 220)</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                A manifestação, criação e informação <span class="highlight-blue">não sofrerão qualquer restrição</span>, observado o disposto na CF.
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">Censura:</span> <span class="highlight-red">VEDADA</span> toda e qualquer censura (política, ideológica e artística) (§ 2º).</li>
+                <li><span class="font-semibold">Jornalismo:</span> Proibida lei que embaraçe a <span class="highlight-green">plena liberdade de informação jornalística</span> (§ 1º).</li>
+                <li><span class="font-semibold">Monopólio:</span> Proibição do <span class="highlight-red">monopólio ou oligopólio</span> dos meios de comunicação (§ 5º).</li>
+                <li><span class="font-semibold">Imprensa:</span> Publicação de comunicação impressa <span class="highlight-green">independente de licença</span> de autoridade (§ 6º).</li>
+                <li><span class="font-semibold">Propaganda Restrita:</span> Tabaco, álcool, agrotóxicos e medicamentos estão sujeitos a restrições e advertências (§ 4º).</li>
+                <li><span class="font-semibold">Defesa (Regulação):</span> A lei deve garantir meios para a pessoa e família se defenderem de programas nocivos e propaganda enganosa (§ 3º).</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 2: A MISSÃO E OS VALORES (Art. 221) - AJUSTADO CONFORME A IMAGEM -->
+        <div class="card p-8 bg-white border-l-8 border-green-500">
+            <div class="icon mb-5">🎭📚</div>
+            <h3 class="text-2xl font-extrabold text-green-700 mb-3">2. Princípios da Programação (Art. 221)</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                A produção e programação das emissoras (Rádio e TV) devem atender aos seguintes 4 princípios:
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="highlight-green">I - Preferência:</span> Finalidades <span class="font-bold">educativas, artísticas, culturais e informativas</span>.</li>
+                <li><span class="highlight-green">II - Cultura Nacional:</span> Promoção da cultura nacional/regional e estímulo à produção independente que se utilize dos <span class="font-bold">talentos locais</span>.</li>
+                <li><span class="highlight-green">III - Regionalização:</span> Produção deve ser <span class="font-bold">regionalizada</span> (conforme percentuais estabelecidos em lei).</li>
+                <li><span class="highlight-green">IV - Ética:</span> Respeito aos <span class="font-bold">valores éticos e sociais</span> da pessoa e da família.</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 3: PROPRIEDADE E CAPITAL (Art. 222) - AJUSTADO (REMOÇÃO DE PONTO MOVIDO) -->
+        <div class="card p-8 bg-white border-l-8 border-yellow-500">
+            <div class="icon mb-5">💰🇧🇷</div>
+            <h3 class="text-2xl font-extrabold text-yellow-700 mb-3">3. Quem Pode Ser Dono? (Art. 222)</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                A propriedade de empresas de comunicação é <span class="highlight-blue">privativa</span> de:
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">Pessoa Física:</span> Brasileiros natos ou naturalizados há <span class="highlight-blue">mais de 10 anos</span>.</li>
+                <li><span class="font-semibold">Pessoa Jurídica:</span> Constituídas sob leis brasileiras, com sede no País.</li>
+                <li><span class="font-semibold">Capital Mínimo:</span> <span class="highlight-green">70% do capital total e votante</span> deve ser desses brasileiros.</li>
+                <li><span class="font-semibold">Alerta CN:</span> Alterações de controle societário devem ser comunicadas ao <span class="highlight-red">Congresso Nacional</span>.</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 4: CONCESSÃO, CN E REGULAMENTAÇÃO (Art. 223 e 224) - AJUSTADO CONFORME A IMAGEM -->
+        <div class="card p-8 bg-white border-l-8 border-red-500">
+            <div class="icon mb-5">🎙️🔑</div>
+            <h3 class="text-2xl font-extrabold text-red-700 mb-3">4. Outorga, Prazos e Regulamentação (Art. 223/224)</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                As regras sobre a 'chave' da transmissão e a regulamentação dos deveres (DOAS):
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">Art. 223 - Outorga:</span> Compete ao <span class="highlight-red">Poder Executivo</span> a outorga **e renovação** de <span class="highlight-blue">concessão, permissão e autorização</span> (sujeito ao Congresso Nacional).</li>
+                <li><span class="font-semibold">Prazos:</span> Rádio (<span class="highlight-blue">10 anos</span>); Televisão (<span class="highlight-blue">15 anos</span>).</li>
+                <li><span class="font-semibold">Conselho (Art. 224):</span> O Congresso Nacional instituirá o <span class="highlight-blue">Conselho de Comunicação Social</span> (órgão auxiliar).</li>
+                <li><span class="font-semibold">Cancelamento:</span> SÓ pode ocorrer antes do prazo por <span class="highlight-red">decisão judicial</span>.</li>
+            </ul>
+        </div>
+    </main>
+    
+    <!-- TÍTULO: DISPOSIÇÕES CONSTITUCIONAIS GERAIS -->
+    <h2 class="text-3xl font-bold text-gray-700 mb-6 border-b-4 border-indigo-500 pb-3 max-w-7xl mx-auto">
+        TÍTULO IX: DAS DISPOSIÇÕES CONSTITUCIONAIS GERAIS (Art. 234 ao 250)
+    </h2>
+
+    <!-- Conteúdo Principal - 7 Blocos Temáticos (Disposições Gerais) -->
+    <main class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+        <!-- BLOCO 5: CARACTERÍSTICAS TÍTULO IX (Conteúdo da Slide 1) -->
+        <div class="card p-8 bg-white border-l-8 border-yellow-500">
+            <div class="icon mb-5">🔀</div>
+            <h3 class="text-2xl font-extrabold text-yellow-700 mb-3">5. Título IX: Características e Abrangência</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                O Título IX possui natureza residual e transversal, tratando de temas não alocados nos títulos anteriores.
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">Temas:</span> Nem sempre tratam de matéria que precisa estar em títulos específicos, podendo interessar a mais de um capítulo ou ser <span class="highlight-green">autônomas e independentes</span>.</li>
+                <li><span class="font-semibold">Normas:</span> As regras tratadas neste resumo se referem à Constituição, sendo definidas como <span class="highlight-blue">Disposições Gerais</span>.</li>
+                <li><span class="font-semibold">Operacionalização:</span> Os artigos geralmente determinam a <span class="highlight-green">operacionalização da lei</span>, abrangendo do Art. 234 ao Art. 250.</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 6: ENCARGOS DA UNIÃO (Art. 234) - Conteúdo da Slide 2 -->
+        <div class="card p-8 bg-white border-l-8 border-red-700">
+            <div class="icon mb-5">🛑💸</div>
+            <h3 class="text-2xl font-extrabold text-red-700 mb-3">6. Encargos da União com Pessoal Inativo (Art. 234)</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                O Art. 234 estabelece uma <span class="highlight-red">VEDAÇÃO</span> à União para assumir certos encargos:
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-3">
+                <li><span class="font-semibold">I - Vedações:</span> É vedada a assunção de encargos, especificamente no caso de despesas com <span class="highlight-red">pessoal inativo</span> e amortização da <span class="highlight-red">dívida interna ou externa</span> da administração pública (inclusive a indireta).</li>
+                <li><span class="font-semibold">II - Objetivo:</span> Salvaguardar a União de sofrer com encargos provenientes da <span class="highlight-blue">criação de novo Estado</span> (Art. 18, §2º e §3º, CF).</li>
+                <li><span class="font-semibold">III - Municípios:</span> A criação de novos municípios é condicionada à apresentação de <span class="highlight-green">estudos de viabilidade</span>.</li>
+                <li><span class="font-semibold">Definição:</span> Inativos são <span class="highlight-blue">servidores aposentados</span> que recebem proventos.</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 7: CRIAÇÃO DO ESTADO E 10 PRIMEIROS ANOS (Art. 235) - NOVO CONTEÚDO -->
+        <div class="card p-8 bg-white border-l-8 border-indigo-500">
+            <div class="icon mb-5">🍼🗺️</div>
+            <h3 class="text-2xl font-extrabold text-indigo-700 mb-3">7. Criação do Estado e os 10 Primeiros Anos (Art. 235)</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                O Art. 235 estabelece a <span class="highlight-blue">organização inaugural</span> dos três Poderes no novo Estado, que vigorará pelos <span class="highlight-blue">primeiros 10 anos</span> de sua criação.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed font-bold mt-4">
+                Estrutura Pós-Transição e Administrativa
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-3">
+                <li><span class="font-semibold">Poder Constituinte Derivado (Art. 28):</span> Após o período de 10 anos, a legislação a ser seguida será a contida na <span class="highlight-green">Constituição Estadual</span>. Os Estados se organizam e regem pelas Constituições e leis adotadas, observados os princípios constitucionais de <span class="highlight-green">auto-organização</span>.</li>
+                <li><span class="font-semibold">Administração Direta:</span> Formalizada pela estrutura administrativa da Presidência da República e dos ministérios (referência ao modelo federal, embora o Art. 235 trate da estrutura estatal).</li>
+                <li><span class="font-semibold">Administração Indireta:</span> Inclui entes dotados de personalidade jurídica (autarquias, empresas públicas, sociedades de economia mista e fundações), regidas pelo Dec-Lei 200/1967.</li>
+            </ul>
+
+            <p class="text-gray-700 leading-relaxed font-bold mt-4">
+                Regras Inaugurais Obrigatórias (Limites dos Primeiros 10 Anos)
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-3">
+                <li><span class="font-semibold">I - Assembléia Legislativa (Poder Legislativo):</span>
+                    <ul class="list-disc ml-5 mt-1 text-sm space-y-1">
+                        <li><span class="highlight-blue">17 Deputados:</span> Se a população for inferior a 600 mil.</li>
+                        <li><span class="highlight-blue">24 Deputados:</span> Se a população for de 600 mil até 1,5 milhão.</li>
+                    </ul>
+                </li>
+                <li><span class="font-semibold">II - Executivo:</span> O Governo terá no máximo <span class="highlight-red">10 Secretarias</span>.</li>
+                <li><span class="font-semibold">III - Tribunal de Contas:</span> Terá <span class="highlight-blue">3 membros</span> (nomeados pelo Governador, dentre idôneos e notório saber).</li>
+                <li><span class="font-semibold">IV - Tribunal de Justiça:</span> Terá <span class="highlight-blue">7 Desembargadores</span>.</li>
+                <li><span class="font-semibold">V/VI - Primeiros Desembargadores:</span> Nomeados pelo Governador eleito, escolhidos:
+                    <ul class="list-disc ml-5 mt-1 text-sm space-y-1">
+                        <li><span class="highlight-green">5 Vagas:</span> Dentre magistrados (+ <span class="highlight-blue">35 anos</span> de idade).</li>
+                        <li><span class="highlight-green">2 Vagas:</span> Dentre promotores/advogados (+ <span class="highlight-blue">10 anos</span> de exercício).</li>
+                        <li><span class="font-semibold">(Ex-Território Federal)</span> As 5 vagas podem ser de juízes de qualquer parte do País.</li>
+                    </ul>
+                </li>
+                <li><span class="font-semibold">VII - 1ª Comarca:</span> 1º Juiz, 1º Promotor e 1º Defensor nomeados após <span class="highlight-blue">Concurso Público</span>.</li>
+                <li><span class="font-semibold">VIII - Cargos de Cúpula:</span> Pela Procuradoria, Advocacia e Defensoria respondem advogados de notório saber (+ <span class="highlight-blue">35 anos</span>), demissíveis "ad nutum", até a promulgação da Constituição Estadual.</li>
+                <li><span class="font-semibold">IX - Transferência de Encargos (Servidores Federais optantes, em caso de Território):</span>
+                    <ul class="list-disc ml-5 mt-1 text-sm space-y-1">
+                        <li><span class="highlight-red">6º ano:</span> Estado assume <span class="highlight-blue">20%</span> dos encargos financeiros (União restante).</li>
+                        <li><span class="highlight-red">7º ano:</span> Estado assume + <span class="highlight-blue">30%</span> (Total 50%).</li>
+                        <li><span class="highlight-red">8º ano:</span> Estado assume + <span class="highlight-blue">50%</span> (Total 100%).</li>
+                    </ul>
+                </li>
+                <li><span class="font-semibold">X - Nomeações Futuras:</span> As nomeações seguintes serão disciplinadas pela <span class="highlight-blue">Constituição Estadual</span>.</li>
+                <li><span class="font-semibold">XI - Limite de Gastos:</span> Despesas com pessoal <span class="highlight-red">não podem ultrapassar 50%</span> da receita.</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 8 (ANTIGO 7): O SELO DA FÉ PÚBLICA (Art. 236 e 237) -->
+        <div class="card p-8 bg-white border-l-8 border-purple-500">
+            <div class="icon mb-5">📜✍️</div>
+            <h3 class="text-2xl font-extrabold text-purple-700 mb-3">8. Cartórios, Comércio e Combustíveis</h3>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">Cartórios (Art. 236):</span> Exercidos em <span class="highlight-green">caráter privado</span> (delegação).</li>
+                <li><span class="font-semibold">Ingresso:</span> Depende de <span class="highlight-blue">Concurso Público</span> de provas e títulos.</li>
+                <li><span class="font-semibold">Vagas:</span> Não podem ficar vagas por mais de <span class="highlight-red">seis meses</span>.</li>
+                <li><span class="font-semibold">Comércio Exterior (Art. 237):</span> Fiscalização e controle são exercidos pelo <span class="highlight-blue">Ministério da Fazenda</span>.</li>
+                <li><span class="font-semibold">Combustíveis (Art. 238):</span> Lei ordenará a venda/revenda de combustíveis (petróleo, álcool).</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 9 (ANTIGO 8): A REDE DE SEGURANÇA SOCIAL (Art. 239, 240, 241) -->
+        <div class="card p-8 bg-white border-l-8 border-teal-500">
+            <div class="icon mb-5">💰🛡️</div>
+            <h3 class="text-2xl font-extrabold text-teal-700 mb-3">9. PIS/PASEP: Financiamento, Abono e Regras (Art. 239)</h3>
+            <p class="text-gray-700 leading-relaxed font-bold">
+                (Atualizado EC 135/2024) A arrecadação do PIS/PASEP financia:
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-3">
+                <li><span class="font-semibold">I - Destinação Principal:</span> <span class="highlight-green">Seguro-desemprego</span>, outras ações da <span class="highlight-green">Previdência Social</span> e o <span class="highlight-green">Abono Anual</span> (§ 3º).</li>
+                <li><span class="font-semibold">II - Desenvolvimento (§ 1º):</span> Mínimo de <span class="highlight-blue">28%</span> para programas de <span class="highlight-blue">desenvolvimento econômico</span> (via BNDES), preservando o valor. <span class="highlight-blue">Avaliação anual</span> e divulgação obrigatória (§ 5º).</li>
+                <li><span class="font-semibold">III - Patrimônio Acumulado (§ 2º):</span> Patrimônios acumulados do PIS/PASEP são <span class="highlight-green">preservados</span>. É <span class="highlight-red">vedada a distribuição</span> da nova arrecadação para contas individuais dos participantes.</li>
+                <li><span class="font-semibold">IV - Abono Salarial (§ 3º/3º-A):</span>
+                    <ul class="list-disc ml-5 mt-1 text-sm space-y-1">
+                        <li>Limite de remuneração: Até <span class="highlight-blue">2x o salário mínimo</span> (para pagamento em 2025, corrigido a partir de 2026).</li>
+                        <li>Limite Mínimo de Elegibilidade: Não inferior a <span class="highlight-blue">1,5x o salário mínimo</span>.</li>
+                    </ul>
+                </li>
+                <li><span class="font-semibold">V - Rotatividade (§ 4º):</span> Empresas com índice de rotatividade superior à média do setor terão <span class="highlight-red">contribuição adicional</span>.</li>
+            </ul>
+
+            <p class="text-gray-700 leading-relaxed font-bold mt-4">
+                Outras Disposições Relacionadas
+            </p>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">Ressalvas (Art. 240):</span> Contribuições compulsórias destinadas a entidades sindicais de serviço social (ex: SESI/SENAI) estão ressalvadas.</li>
+                <li><span class="font-semibold">Cooperação (Art. 241):</span> Permite a União, Estados e Municípios formarem <span class="highlight-green">consórcios e convênios</span> para gestão associada de serviços públicos.</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 10 (ANTIGO 9): PROTEÇÃO E ORDEM SOCIAL (Art. 242, 243, 244, 245) -->
+        <div class="card p-8 bg-white border-l-8 border-orange-500">
+            <div class="icon mb-5">🔗⚖️</div>
+            <h3 class="text-2xl font-extrabold text-orange-700 mb-3">10. Expropriação, Educação e Direitos Sociais</h3>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">Expropriação (Art. 243):</span> Propriedades com <span class="highlight-red">tráfico de drogas</span> ou <span class="highlight-red">trabalho escravo</span> são expropriadas para reforma agrária **SEM INDENIZAÇÃO**.</li>
+                <li><span class="font-semibold">História (Art. 242, § 1º):</span> O ensino da História do Brasil deve levar em conta as <span class="highlight-blue">contribuições das diferentes culturas e etnias</span>.</li>
+                <li><span class="font-semibold">Acessibilidade (Art. 244):</span> Lei disporá sobre a <span class="highlight-green">adaptação de logradouros</span>, edifícios e veículos para pessoas com deficiência.</li>
+                <li><span class="font-semibold">Vítimas (Art. 245):</span> Lei disporá sobre a assistência do Poder Público a herdeiros/dependentes carentes de <span class="highlight-blue">vítimas de crime doloso</span>.</li>
+            </ul>
+        </div>
+
+        <!-- BLOCO 11 (ANTIGO 10): ADMINISTRAÇÃO E PREVIDÊNCIA (Art. 246 ao 250) -->
+        <div class="card p-8 bg-white border-l-8 border-gray-500">
+            <div class="icon mb-5">👩‍💼👴</div>
+            <h3 class="text-2xl font-extrabold text-gray-700 mb-3">11. Servidores e Fundos Previdenciários</h3>
+            <ul class="list-disc ml-5 mt-3 text-gray-600 space-y-2">
+                <li><span class="font-semibold">MP Proibida (Art. 246):</span> <span class="highlight-red">VEDADA</span> MP para regulamentar artigos alterados por certas emendas constitucionais.</li>
+                <li><span class="font-semibold">Perda do Cargo (Art. 247):</span> Servidor estável só perde o cargo por insuficiência de desempenho mediante <span class="highlight-green">processo administrativo</span> (contraditório e ampla defesa).</li>
+                <li><span class="font-semibold">Fundos (Art. 249/250):</span> Permite a União e Entes Federados constituírem <span class="highlight-blue">fundos</span> para assegurar recursos para o pagamento de aposentadorias e pensões (RPPS e RGPS).</li>
+                <li><span class="font-semibold">Teto (Art. 248):</span> Benefícios da Previdência Social devem observar os <span class="highlight-red">limites máximos</span> fixados na Constituição.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- Rodapé/Instruções -->
+    <footer class="mt-12 pt-6 border-t-2 border-gray-300 text-center max-w-7xl mx-auto">
+        <p class="text-gray-500 text-sm font-semibold">
+            
+            <br>
+            © Desenvolvido por Maria Eloiza da Silva
+        </p>
+    </footer>
+
+</body>
+</html>
